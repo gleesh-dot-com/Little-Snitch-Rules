@@ -1,0 +1,14 @@
+{
+  "name": "Blocks",
+  "description": "Global deny rules that apply to every process.",
+  "rules": [
+    {
+      "process": "any",
+      "action": "deny",
+      "remote-domains": [
+        "iosfonts.com",
+        "sentry.io"
+      ]
+    }
+  ]
+}

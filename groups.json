@@ -1,0 +1,50 @@
+{
+  "groups": {
+    "browsers": {
+      "name": "Browsers",
+      "description": "Web browsers and mail: allow all outgoing connections.",
+      "match": [
+        "identifier.APPLE/com.apple.Safari",
+        "identifier.43AQ936H96/org.mozilla.firefox",
+        "identifier.KL8N8XSYF4/com.brave.Browser",
+        "identifier.9V5K9TP787/app.zen-browser.zen",
+        "identifier.APPLE/com.apple.mail"
+      ]
+    },
+    "apps": {
+      "name": "Apps",
+      "description": "Per-app domain rules for everyday desktop apps.",
+      "match": [
+        "identifier.2BUA8C4S2C/com.1password",
+        "identifier.2Y683PRQWN/cc.ffitch.shottr",
+        "identifier.53Q6R32WPB/com.hnc.Discord",
+        "identifier.75GAHG3SZQ/org.videolan.vlc",
+        "identifier.LBQJ96FQ8D/notion.id",
+        "identifier.Q6L2SF6YDW/com.anthropic.claudefordesktop",
+        "identifier.SY64MV22J9/com.raycast.macos",
+        "identifier.Y93TK974AT/com.bjango.istatmenus",
+        "identifier.X85ZX835W9/net.freemacsoft.AppCleaner",
+        "identifier.J7Y6D5GNLH/app.updatest.Updatest",
+        "identifier.GVZRY6KDKR/com.malwarebytes",
+        "identifier.MLZF7K7B5R/at.obdev.littlesnitch"
+      ]
+    },
+    "dev-tools": {
+      "name": "Dev Tools",
+      "description": "Terminal, editors, API clients, containers and CLI tooling.",
+      "match": [
+        "identifier.3X57WP8E8V/com.proxyman",
+        "identifier.9BNSXJN65R/",
+        "identifier.FX44YY62GV/com.insomnia.app",
+        "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+        "identifier.MQ55VZLNZQ/dev.zed.Zed",
+        "identifier.Q6L2SF6YDW/com.anthropic.claude-code"
+      ]
+    },
+    "blocks": {
+      "name": "Blocks",
+      "description": "Global deny rules that apply to every process.",
+      "match": ["any"]
+    }
+  }
+}

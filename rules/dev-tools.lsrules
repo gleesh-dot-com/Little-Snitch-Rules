@@ -1,0 +1,84 @@
+{
+  "name": "Dev Tools",
+  "description": "Terminal, editors, API clients, containers and CLI tooling.",
+  "rules": [
+    {
+      "process": "identifier.3X57WP8E8V/com.proxyman.NSProxy",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.9BNSXJN65R/com.docker.docker",
+      "action": "allow",
+      "remote-domains": [
+        "docker.com"
+      ]
+    },
+    {
+      "process": "identifier.9BNSXJN65R/com.docker.docker",
+      "action": "deny",
+      "remote-addresses": [
+        "255.255.255.255"
+      ]
+    },
+    {
+      "process": "identifier.9BNSXJN65R/com.docker.docker",
+      "action": "deny",
+      "remote-domains": [
+        "bugsnag.com"
+      ]
+    },
+    {
+      "process": "identifier.FX44YY62GV/com.insomnia.app",
+      "action": "allow",
+      "remote-domains": [
+        "github.com",
+        "githubusercontent.com",
+        "insomnia.rest"
+      ]
+    },
+    {
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "action": "allow",
+      "remote-domains": [
+        "iterm2.com"
+      ]
+    },
+    {
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "via": "identifier.APPLE/com.apple.curl",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.MQ55VZLNZQ/dev.zed.Zed",
+      "action": "allow",
+      "remote-domains": [
+        "agentclientprotocol.com",
+        "github.com",
+        "githubusercontent.com",
+        "zed.dev"
+      ]
+    },
+    {
+      "process": "identifier.MQ55VZLNZQ/dev.zed.Zed",
+      "via": "identifier.HX7739G8FX/node",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.Q6L2SF6YDW/com.anthropic.claude-code",
+      "action": "allow",
+      "remote-domains": [
+        "anthropic.com"
+      ]
+    },
+    {
+      "process": "identifier.Q6L2SF6YDW/com.anthropic.claude-code",
+      "action": "deny",
+      "remote-domains": [
+        "datadoghq.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Browsers",
+  "description": "Web browsers and mail: allow all outgoing connections.",
+  "rules": [
+    {
+      "process": "identifier.43AQ936H96/org.mozilla.firefox",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.9V5K9TP787/app.zen-browser.zen",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.APPLE/com.apple.Safari",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.APPLE/com.apple.mail",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.KL8N8XSYF4/com.brave.Browser",
+      "action": "allow",
+      "remote": "any"
+    }
+  ]
+}

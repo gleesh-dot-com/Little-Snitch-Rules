@@ -1,0 +1,166 @@
+{
+  "name": "Apps",
+  "description": "Per-app domain rules for everyday desktop apps.",
+  "rules": [
+    {
+      "process": "identifier.2BUA8C4S2C/com.1password.1password",
+      "action": "allow",
+      "remote-domains": [
+        "agilebits.com"
+      ]
+    },
+    {
+      "process": "identifier.2Y683PRQWN/cc.ffitch.shottr",
+      "action": "allow",
+      "remote-domains": [
+        "shottr.cc"
+      ]
+    },
+    {
+      "process": "identifier.53Q6R32WPB/com.hnc.Discord",
+      "action": "allow",
+      "remote": "any",
+      "protocol": "udp"
+    },
+    {
+      "process": "identifier.53Q6R32WPB/com.hnc.Discord",
+      "action": "allow",
+      "remote-domains": [
+        "discord.com",
+        "discord.gg",
+        "discord.media",
+        "discordapp.com",
+        "discordapp.net",
+        "klipy.com",
+        "tenor.com"
+      ]
+    },
+    {
+      "process": "identifier.53Q6R32WPB/com.hnc.Discord.helper",
+      "action": "allow",
+      "remote-domains": [
+        "discord.com",
+        "discord.gg",
+        "discord.media",
+        "discordapp.com"
+      ]
+    },
+    {
+      "process": "identifier.75GAHG3SZQ/org.videolan.vlc",
+      "action": "allow",
+      "remote-domains": [
+        "purdue.edu",
+        "videolan.org"
+      ]
+    },
+    {
+      "process": "identifier.GVZRY6KDKR/com.malwarebytes.mbam.rtprotection.daemon",
+      "action": "allow",
+      "remote-domains": [
+        "mwbsys.com"
+      ]
+    },
+    {
+      "process": "identifier.GVZRY6KDKR/com.malwarebytes.mbam.settings.daemon",
+      "action": "deny",
+      "remote-domains": [
+        "sentry.io"
+      ]
+    },
+    {
+      "process": "identifier.J7Y6D5GNLH/app.updatest.Updatest",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.LBQJ96FQ8D/notion.id",
+      "action": "allow",
+      "remote-domains": [
+        "ctfassets.net",
+        "google.com",
+        "googleapis.com",
+        "hcaptcha.com",
+        "notion-static.com",
+        "notion.com",
+        "transcend-cdn.com"
+      ]
+    },
+    {
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",
+      "action": "allow",
+      "remote-domains": [
+        "jsdelivr.net",
+        "obdev.at"
+      ]
+    },
+    {
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.softwareupdate",
+      "action": "allow",
+      "remote-domains": [
+        "obdev.at"
+      ]
+    },
+    {
+      "process": "identifier.Q6L2SF6YDW/com.anthropic.claudefordesktop",
+      "action": "allow",
+      "remote-domains": [
+        "anthropic.com",
+        "claude.ai",
+        "claudeusercontent.com",
+        "google.com",
+        "gstatic.com",
+        "hcaptcha.com"
+      ]
+    },
+    {
+      "process": "identifier.Q6L2SF6YDW/com.anthropic.claudefordesktop",
+      "action": "deny",
+      "remote-domains": [
+        "browser-intake-us5-datadoghq.com"
+      ]
+    },
+    {
+      "process": "identifier.SY64MV22J9/com.raycast.macos",
+      "action": "allow",
+      "remote-domains": [
+        "ray.so"
+      ]
+    },
+    {
+      "process": "identifier.SY64MV22J9/com.raycast.macos",
+      "via": "identifier.HX7739G8FX/node",
+      "action": "allow",
+      "remote": "any"
+    },
+    {
+      "process": "identifier.X85ZX835W9/net.freemacsoft.AppCleaner",
+      "action": "allow",
+      "remote-domains": [
+        "freemacsoft.net",
+        "github.com",
+        "githubusercontent.com"
+      ]
+    },
+    {
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "action": "allow",
+      "remote-domains": [
+        "istatmenus.app"
+      ]
+    },
+    {
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.agent",
+      "action": "allow",
+      "remote-domains": [
+        "istatmenus.app"
+      ]
+    },
+    {
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.status",
+      "action": "allow",
+      "remote-domains": [
+        "istatmenus.app"
+      ]
+    }
+  ]
+}
